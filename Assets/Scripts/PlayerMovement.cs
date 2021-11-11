@@ -8,7 +8,10 @@ public class PlayerMovement : MonoBehaviour
 
     public CharacterController controller;
 
+<<<<<<< Updated upstream
     Rigidbody RB;
+=======
+>>>>>>> Stashed changes
     public float speed = 12f;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
@@ -17,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
 
+<<<<<<< Updated upstream
 
 
     public float originalHeight;
@@ -34,6 +38,11 @@ private void Start()
         RB = GetComponent<Rigidbody>();
         originalHeight = controller.height;
     }
+=======
+    bool isGrounded;
+
+    Vector3 velocity;
+>>>>>>> Stashed changes
 
 
     void Update()
@@ -42,8 +51,12 @@ private void Start()
 
         if(isGrounded && velocity.y < 0)
         {
+<<<<<<< Updated upstream
             velocity.y = -6f;
             
+=======
+            velocity.y = -2f;
+>>>>>>> Stashed changes
         }
 
         float x = Input.GetAxis("Horizontal");
@@ -60,11 +73,15 @@ private void Start()
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
+<<<<<<< Updated upstream
         
+=======
+>>>>>>> Stashed changes
         velocity.y += gravity * Time.deltaTime;
 
 
         controller.Move(velocity * Time.deltaTime);
+<<<<<<< Updated upstream
 
 
         
@@ -101,4 +118,9 @@ private void Start()
     }
 
 
+=======
+    }
+
+ 
+>>>>>>> Stashed changes
 }

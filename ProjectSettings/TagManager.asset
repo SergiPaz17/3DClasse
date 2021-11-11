@@ -8,7 +8,10 @@ TagManager:
   - Metal
   - ExplosiveBarrel
   - Ground
+<<<<<<< Updated upstream
   - TP
+=======
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -17,7 +20,11 @@ TagManager:
   - Water
   - UI
   - Ground
+<<<<<<< Updated upstream
   - TP
+=======
+  - 
+>>>>>>> Stashed changes
   - 
   - 
   - 
